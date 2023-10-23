@@ -9,12 +9,14 @@ public class Ejercicio3 {
 
     public static void main(String[] args) {
         JFrame ventana = new JFrame("Ventana con botón");
+        JButton boton= new JButton("Pulsa aquí");
 
         ventana.setSize(400, 400);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.getContentPane().setLayout(null);
+        ventana.getContentPane().add(boton);
 
-        JButton boton = new JButton("Haz clic aquí");
-        ventana.add(boton);
+        boton.setBounds(150, 150, 100, 40); // Establece la ubicación y el tamaño del botón
 
         boton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -34,4 +36,3 @@ public class Ejercicio3 {
         ventana.setVisible(true);
     }
 }
-
