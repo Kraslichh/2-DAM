@@ -1,6 +1,6 @@
 # Repositorio de 2º Desarrollo de Aplicaciones Multiplataforma
 
-## Autor: Maximilian Kirschberg Castillo
+## Autor: Maximiliam Kirschberg Castillo
 
 ¡Bienvenidos a mi repositorio de 2º Desarrollo de Aplicaciones Multiplataforma!
 
