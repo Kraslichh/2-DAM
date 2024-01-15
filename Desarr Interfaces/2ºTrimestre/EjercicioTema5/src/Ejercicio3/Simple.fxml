@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="Ejercicio3.SimpleController">
+
+    <HBox spacing="10">
+        <!-- Columna izquierda -->
+        <VBox style="-fx-background-color: #001f3f;" alignment="CENTER_LEFT" spacing="10">
+            <Button text="Opcion 1" onAction="#handleButtonClick"/>
+            <Button text="Opcion 2" onAction="#handleButtonClick"/>
+            <Button text="Opcion 3" onAction="#handleButtonClick"/>
+            <Button text="Aceptar" onAction="#handleButtonClick"/>
+            <Button text="Cancelar" onAction="#handleButtonClick"/>
+        </VBox>
+
+        <!-- Centro -->
+        <GridPane style="-fx-background-color: #808080;" alignment="CENTER">
+            <Button text="Boton 1" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button text="Boton 2" onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Button text="Boton 3" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Button text="Boton 4" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Button text="Boton 5" onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Button text="Boton 6" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        </GridPane>
+
+        <!-- Columna derecha -->
+        <VBox style="-fx-background-color: #800080;" alignment="CENTER_RIGHT" spacing="10">
+            <Button text="Opcion A" onAction="#handleButtonClick"/>
+            <Button text="Opcion B" onAction="#handleButtonClick"/>
+            <Button text="Opcion C" onAction="#handleButtonClick"/>
+        </VBox>
+    </HBox>
+
+</StackPane>
