@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculatorBackground">#2c3e50</color>
+    <color name="displayBackground">#34495e</color>
+    <color name="white">#ecf0f1</color>
+    <!-- Define otros colores que necesites aquí -->
+</resources>
