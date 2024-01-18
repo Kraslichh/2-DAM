@@ -1,0 +1,8 @@
+<resources>
+        <string name="app_name">EjerciciosMisPrimerasApps</string>
+        <string name="hint_email">Añade tu email</string>
+        <string name="hint_password">Añade la contraseña</string>
+        <string name="login">Login</string>
+        <!-- ... otros strings ... -->
+    </resources>
+
