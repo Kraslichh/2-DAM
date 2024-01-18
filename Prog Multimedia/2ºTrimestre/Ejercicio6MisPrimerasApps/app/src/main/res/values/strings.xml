@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Proyecto7</string>
+    <string name="welcome_message">Hola %1$s</string>
+    <string name="details_format">Detalles:\nApellidos: %1$s\nCurso: %2$s\nAsignatura: %3$s\nNota: %4$s</string>
+</resources>
