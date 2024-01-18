@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Nombre"
+        android:textColor="@color/transparent_black" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNameLabel"
+        android:layout_centerInParent="true"
+        android:hint="Nombre" />
+
+    <TextView
+        android:id="@+id/textViewLastNameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Apellidos"
+        android:textColor="@color/transparent_black" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastNameLabel"
+        android:hint="Apellidos" />
+
+    <TextView
+        android:id="@+id/textViewCourseLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Curso"
+        android:textColor="@color/transparent_black" />
+
+    <EditText
+        android:id="@+id/editTextCourse"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCourseLabel"
+        android:hint="Curso" />
+
+    <TextView
+        android:id="@+id/textViewSubjectLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourse"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Asignatura"
+        android:textColor="@color/transparent_black" />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubjectLabel"
+        android:hint="Asginatura" />
+
+    <TextView
+        android:id="@+id/textViewGradeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSubject"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nota"
+        android:textColor="@color/transparent_black" />
+
+    <EditText
+        android:id="@+id/editTextGrade"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGradeLabel"
+        android:hint="0"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGrade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="PULSAME" />
+</RelativeLayout>
