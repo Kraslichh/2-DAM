@@ -1,0 +1,110 @@
+<!-- activity_main.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="112dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="130dp"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="345dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:hint="Apellidos"
+        app:layout_constraintEnd_toEndOf="@id/etNombre"
+        app:layout_constraintStart_toStartOf="@id/etNombre"
+        app:layout_constraintTop_toBottomOf="@id/etNombre" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="@id/etApellidos"
+        app:layout_constraintStart_toStartOf="@id/etApellidos"
+        app:layout_constraintTop_toBottomOf="@id/etApellidos" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="@id/etEmail"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <EditText
+        android:id="@+id/etConfirmarContrasena"
+        android:layout_width="338dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/etContrasena"
+        app:layout_constraintStart_toStartOf="@id/etContrasena"
+        app:layout_constraintTop_toBottomOf="@id/etContrasena" />
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:text="Alta"
+        app:layout_constraintEnd_toEndOf="@id/etConfirmarContrasena"
+        app:layout_constraintStart_toStartOf="@id/etConfirmarContrasena"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmarContrasena" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="@id/btnAlta"
+        app:layout_constraintStart_toStartOf="@id/btnAlta"
+        app:layout_constraintTop_toBottomOf="@id/btnAlta" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="326dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="@id/btnCancelar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/btnCancelar"
+        app:layout_constraintTop_toBottomOf="@id/btnCancelar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
