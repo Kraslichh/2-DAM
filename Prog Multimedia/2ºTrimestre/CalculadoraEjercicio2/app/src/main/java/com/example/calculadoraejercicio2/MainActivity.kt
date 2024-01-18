@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,22 +39,19 @@ class MainActivity : AppCompatActivity() {
 
     fun onEqual(view: View) {
         try {
-            // Aquí necesitarás implementar la lógica para evaluar la expresión
-            // Por ejemplo, si estás utilizando una librería de parsing de expresiones,
-            // evaluarías la expresión así:
-            // val result = ExpressionBuilder(tvInput.text.toString()).build().evaluate()
-            // tvInput.text = result.toString()
-
-            // Esto es solo un placeholder para indicar dónde iría la lógica de evaluación
-            tvInput.text = evaluateExpression(tvInput.text.toString())
+            val result = evaluateExpression(tvInput.text.toString())
+            tvInput.text = result.toString()
         } catch (e: Exception) {
             tvInput.text = "Error"
         }
     }
 
-    // Esta función es un placeholder para donde implementarías la lógica de evaluación real
     private fun evaluateExpression(expression: String): String {
-        // Implementa la lógica de evaluación aquí
-        return expression
+        return try {
+            val result = ExpressionBuilder(expression).build().evaluate()
+            result.toString()
+        } catch (e: Exception) {
+            "Error"
+        }
     }
 }
