@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <!-- Barra de color verde a la izquierda -->
+
+    <!-- Barra de color rojo al centro -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:background="#008000" />
+
+    <!-- Barra de color negro a la derecha -->
+
+    <View
+        android:layout_width="136dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="#FF0000" />
+
+    <View
+        android:layout_width="132dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:background="#000000" />
+
+    <!-- Barra de color azul en la parte inferior -->
+
+</FrameLayout>
