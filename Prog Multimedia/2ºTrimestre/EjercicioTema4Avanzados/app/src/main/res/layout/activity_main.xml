@@ -1,0 +1,233 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <View android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00BCD4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/view2"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/view4"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 2 -->
+    <View android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFEB3B"
+    app:layout_constraintStart_toEndOf="@+id/view1"
+    app:layout_constraintEnd_toStartOf="@+id/view3"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/view5"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 3 -->
+    <View android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9C27B0"
+    app:layout_constraintStart_toEndOf="@+id/view2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/view6"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Fila 2 -->
+    <!-- Cuadrado 4 -->
+    <View android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#8BC34A"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/view5"
+    app:layout_constraintTop_toBottomOf="@+id/view1"
+    app:layout_constraintBottom_toTopOf="@+id/view7"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 5 -->
+    <View android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF9800"
+    app:layout_constraintStart_toEndOf="@+id/view4"
+    app:layout_constraintEnd_toStartOf="@+id/view6"
+    app:layout_constraintTop_toBottomOf="@+id/view2"
+    app:layout_constraintBottom_toTopOf="@+id/view8"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 6 -->
+    <View android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#03A9F4"
+    app:layout_constraintStart_toEndOf="@+id/view5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view3"
+    app:layout_constraintBottom_toTopOf="@+id/view9"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Fila 3 -->
+    <!-- Cuadrado 7 -->
+    <View android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#673AB7"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/view8"
+    app:layout_constraintTop_toBottomOf="@+id/view4"
+    app:layout_constraintBottom_toTopOf="@+id/view10"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 8 -->
+    <View android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#CDDC39"
+    app:layout_constraintStart_toEndOf="@+id/view7"
+    app:layout_constraintEnd_toStartOf="@+id/view9"
+    app:layout_constraintTop_toBottomOf="@+id/view5"
+    app:layout_constraintBottom_toTopOf="@+id/view11"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <View android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5722"
+    app:layout_constraintStart_toEndOf="@+id/view8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view6"
+    app:layout_constraintBottom_toTopOf="@+id/view12"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="4dp"/>
+
+
+    <View android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3F51B5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/view11"
+    app:layout_constraintTop_toBottomOf="@+id/view7"
+    app:layout_constraintBottom_toTopOf="@+id/view13"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 11 -->
+    <View android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#009688"
+    app:layout_constraintStart_toEndOf="@+id/view10"
+    app:layout_constraintEnd_toStartOf="@+id/view12"
+    app:layout_constraintTop_toBottomOf="@+id/view8"
+    app:layout_constraintBottom_toTopOf="@+id/view14"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Cuadrado 12 -->
+    <View android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFC107"
+    app:layout_constraintStart_toEndOf="@+id/view11"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view9"
+    app:layout_constraintBottom_toTopOf="@+id/view15"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="4dp"/>
+
+    <!-- Fila 5 -->
+    <!-- Cuadrado 13 -->
+    <View android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#795548"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/view14"
+    app:layout_constraintTop_toBottomOf="@+id/view10"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"/>
+
+    <!-- Cuadrado 14 -->
+    <View android:id="@+id/view14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#607D8B"
+    app:layout_constraintStart_toEndOf="@+id/view13"
+    app:layout_constraintEnd_toStartOf="@+id/view15"
+    app:layout_constraintTop_toBottomOf="@+id/view11"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"/>
+
+    <!-- Cuadrado 15 -->
+    <View android:id="@+id/view15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E91E63"
+    app:layout_constraintStart_toEndOf="@+id/view14"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view12"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent="0.33"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
