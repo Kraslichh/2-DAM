@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10" padding="20"
+      style="-fx-background-color: white;"
+      alignment="center">
+
+    <!-- Título en morado -->
+    <Label text="Formulario Clientes" style="-fx-font-size: 20px; -fx-text-fill: purple;"/>
+
+    <!-- Cuadros con checkboxes -->
+    <HBox spacing="10">
+        <CheckBox text="Television"/>
+        <CheckBox text="Telefonia"/>
+        <CheckBox text="Wifi"/>
+    </HBox>
+
+    <!-- Título y desplegables -->
+    <HBox spacing="10">
+        <Label text="Forma de pago"/>
+        <ComboBox>
+            <items>
+                <!-- Definimos los elementos directamente en el archivo FXML -->
+                <String fx:value="Opción 1"/>
+                <String fx:value="Opción 2"/>
+                <String fx:value="Opción 3"/>
+            </items>
+        </ComboBox>
+        <Label text="Otros servicios"/>
+        <ComboBox>
+            <items>
+                <!-- Definimos los elementos directamente en el archivo FXML -->
+                <String fx:value="Opción A"/>
+                <String fx:value="Opción B"/>
+                <String fx:value="Opción C"/>
+            </items>
+        </ComboBox>
+    </HBox>
+
+    <!-- Cuadros circulares -->
+    <HBox spacing="10">
+        <RadioButton text="Particular"/>
+        <RadioButton text="Empresa"/>
+    </HBox>
+
+    <!-- Fecha de nacimiento -->
+    <HBox spacing="10">
+        <Label text="Fecha de nacimiento"/>
+        <DatePicker/>
+    </HBox>
+
+    <!-- Enlace a Google -->
+    <Hyperlink text="Ir a Google" onAction="#openGoogle"/>
+
+    <!-- Desplegable de cambio de color de fondo -->
+    <HBox spacing="10">
+        <Label text="Cambiar color de fondo"/>
+        <ComboBox onAction="#changeBackgroundColor">
+            <items>
+                <!-- Definimos los elementos directamente en el archivo FXML -->
+                <String fx:value="Blanco"/>
+                <String fx:value="Azul"/>
+                <String fx:value="Verde"/>
+            </items>
+        </ComboBox>
+    </HBox>
+
+    <Button text="Guardar" onAction="#guardar"/>
+</VBox>

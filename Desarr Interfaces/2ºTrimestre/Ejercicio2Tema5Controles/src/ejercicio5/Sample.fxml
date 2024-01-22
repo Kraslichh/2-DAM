@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+	<?import javafx.scene.control.*?>
+	<?import javafx.scene.layout.*?>
+	<?import javafx.scene.text.*?>
+	
+	<VBox xmlns="http://javafx.com/javafx"
+	      xmlns:fx="http://javafx.com/fxml"
+	         fx:controller="ejercicio5.MainController"
+	      alignment="CENTER">
+	
+	    <!-- Título -->
+	    <Label text="Formulario" style="-fx-font-size: 20px;"/>
+	
+	    <!-- Campo de texto -->
+	    <HBox spacing="10">
+	        <Label text="Nombre:"/>
+	        <TextField fx:id="nombreTextField"/>
+	    </HBox>
+	
+	    <!-- Botón para mostrar resultado -->
+	    <Button text="Mostrar Resultado"/>
+	
+	</VBox>

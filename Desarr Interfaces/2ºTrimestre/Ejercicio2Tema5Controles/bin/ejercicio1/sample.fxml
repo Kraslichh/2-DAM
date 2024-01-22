@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="center" hgap="10" prefHeight="200.0" prefWidth="300.0" vgap="10" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="operador1Field" promptText="Operador 1" />
+        <TextField fx:id="operador2Field" GridPane.columnIndex="1" promptText="Operador 2" />
+        <Label fx:id="resultadoLabel" GridPane.columnSpan="2" text="Resultado: " />
+        <Button fx:id="sumarButton" text="Sumar" GridPane.rowIndex="1" />
+        <Button fx:id="restarButton" text="Restar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="multiplicarButton" text="Multiplicar" GridPane.rowIndex="2" />
+        <Button fx:id="dividirButton" text="Dividir" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="limpiarButton" text="Limpiar" GridPane.rowIndex="3" />
+        <Button fx:id="salirButton" text="Salir" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </children>
+</GridPane>

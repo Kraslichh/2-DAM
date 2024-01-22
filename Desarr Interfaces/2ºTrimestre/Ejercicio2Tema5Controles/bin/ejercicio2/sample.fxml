@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="center" hgap="10" prefHeight="200.0" prefWidth="400.0" vgap="10" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="valorField" promptText="Ingrese el valor" />
+        <Label fx:id="resultadoLabel" GridPane.columnSpan="3" text="Resultado: " />
+        <Button fx:id="calcular4Button" text="Calcular 4%" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button fx:id="calcular10Button" text="Calcular 10%" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="calcular21Button" text="Calcular 21%" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    </children>
+</GridPane>
