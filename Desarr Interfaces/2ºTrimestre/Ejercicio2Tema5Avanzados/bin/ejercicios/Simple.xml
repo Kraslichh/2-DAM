@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="ejercicios.CalculadoraController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextField fx:id="display" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="4"/>
+    <Button text="7" onAction="#handleButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="8" onAction="#handleButtonAction" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="9" onAction="#handleButtonAction" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    <Button text="4" onAction="#handleButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Button text="5" onAction="#handleButtonAction" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button text="6" onAction="#handleButtonAction" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <Button text="1" onAction="#handleButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button text="2" onAction="#handleButtonAction" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button text="3" onAction="#handleButtonAction" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+    <Button text="0" onAction="#handleButtonAction" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button text="+" onAction="#handleButtonAction" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+    <Button text="-" onAction="#handleButtonAction" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+    <Button text="*" onAction="#handleButtonAction" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    <Button text="/" onAction="#handleButtonAction" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+    <Button text="C" onAction="#handleButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button text="=" onAction="#handleButtonAction" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+</GridPane>
