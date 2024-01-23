@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2BE2"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tuResultadoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/your_result"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/bmiResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tuResultadoTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="48sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/bmiCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiResultTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/recalcularButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiCategoryTextView"
+        android:layout_marginTop="36dp"
+        android:text="@string/recalculate"
+        android:background="#4B0082"
+        android:textColor="#fff"
+        android:textSize="24sp"/>
+
+</RelativeLayout>

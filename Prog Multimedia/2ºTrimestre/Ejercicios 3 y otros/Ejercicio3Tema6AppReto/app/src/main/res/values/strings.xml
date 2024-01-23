@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidMaster</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="your_result">Tu resultado</string>
+    <string name="recalculate">Re-calcular</string>
+    <string name="bajo_peso">Bajo peso</string>
+    <string name="peso_normal">Peso normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidad_grado_1">Obesidad (Grado 1)</string>
+    <string name="obesidad_grado_2">Obesidad (Grado 2)</string>
+    <string name="obesidad_extrema_grado_3">Obesidad extrema (Grado 3)</string>
+</resources>
