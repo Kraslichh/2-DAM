@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A2BE2"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/genderSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/maleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/male"
+            android:padding="12dp"
+            android:src="@drawable/ic_male" />
+
+        <ImageButton
+            android:id="@+id/femaleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/female"
+            android:padding="12dp"
+            android:src="@drawable/ic_female" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/alturaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSelection"
+        android:layout_marginTop="24dp"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="36sp"
+        android:background="@drawable/edittext_background"/>
+
+    <LinearLayout
+        android:id="@+id/weightAgeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/alturaEditText"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <!-- Weight Selector -->
+        <LinearLayout
+            android:id="@+id/weightSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/weightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                android:textColor="#fff"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/pesoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:background="@drawable/edittext_background"/>
+        </LinearLayout>
+
+        <!-- Age Selector -->
+        <LinearLayout
+            android:id="@+id/ageSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/ageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textColor="#fff"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/edadEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:background="@drawable/edittext_background"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightAgeContainer"
+        android:layout_marginTop="24dp"
+        android:text="@string/calculate"
+        android:background="#4B0082"
+        android:textColor="#fff"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
