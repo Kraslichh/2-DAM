@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+
+
+        <!-- Configuración de la conexión a la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/TiendaLibros?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Configuración del dialecto -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Especifica las clases mapeadas -->
+        <mapping class="ejerciciosreto.Libro"/>
+        <mapping class="ejerciciosreto.Autor"/>
+        <mapping class="ejerciciosreto.Categoria"/>
+        <mapping class="ejerciciosreto.Cliente"/>
+        <mapping class="ejerciciosreto.Pedido"/>
+
+        <!-- Otras propiedades de configuración -->
+    </session-factory>
+</hibernate-configuration>

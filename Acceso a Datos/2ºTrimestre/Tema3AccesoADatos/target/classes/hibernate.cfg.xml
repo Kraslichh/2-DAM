@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Configuración de la conexión a la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dbgametop?</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Configuración del dialecto de SQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Otras propiedades opcionales -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Especifica las configuraciones de mapeo de entidades -->
+        <mapping class="ejercicios.Cliente"/>
+        <mapping class="ejercicios.Fabricante"/>
+        <mapping class="ejercicios.Producto"/>
+        <mapping class="ejercicios.Productos"/>
+        <mapping class="ejercicios.Compra"/>
+        <mapping class="ejercicios.Juego"/>
+        <!-- Añadir más elementos de mapeo si es necesario -->
+
+    </session-factory>
+</hibernate-configuration>
