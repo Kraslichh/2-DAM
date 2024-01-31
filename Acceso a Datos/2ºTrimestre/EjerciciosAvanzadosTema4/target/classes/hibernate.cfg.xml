@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-configuration>
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuración de la conexión a la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tema4ejercicios</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Configuración del dialecto de SQL para MySQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Especifica el uso de C3P0 como pool de conexiones -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <!-- Mostrar SQL en la consola -->
+        <property name="show_sql">true</property>
+
+        <!-- Actualizar el esquema al iniciar -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Entidades mapeadas -->
+        <mapping class="ejercicio1.Empresa" />
+         <mapping class="ejercicio2.Empleado" />
+         <mapping class="reto.Libro" />
+    </session-factory>
+</hibernate-configuration>
