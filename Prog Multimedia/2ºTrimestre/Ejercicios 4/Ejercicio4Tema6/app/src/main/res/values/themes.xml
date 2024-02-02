@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Ejercicio4Tema6" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Customize other styles as needed -->
+
+    <!-- Style for your application's activities -->
+    <style name="Theme.Ejercicio4Tema6.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Style for AppCompat Dialog -->
+    <style name="Theme.Ejercicio4Tema6.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+</resources>
