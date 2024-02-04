@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.stage.Stage?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ejercicios.Controlador">
+    <center>
+        <TableView fx:id="tabla" prefWidth="600">
+            <columns>
+                <TableColumn text="ID" fx:id="idColumna" prefWidth="50" />
+                <TableColumn text="Nombre" fx:id="nombreColumna" prefWidth="100" />
+                <TableColumn text="Apellido 1" fx:id="apellido1Columna" prefWidth="100" />
+                <TableColumn text="Apellido 2" fx:id="apellido2Columna" prefWidth="100" />
+                <TableColumn text="Fecha Nacimiento" fx:id="fechaNacimientoColumna" prefWidth="100" />
+                <TableColumn text="Es Repetidor" fx:id="esRepetidorColumna" prefWidth="100" />
+                <TableColumn text="Teléfono" fx:id="telefonoColumna" prefWidth="100" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+        </HBox>
+    </bottom>
+</BorderPane>
