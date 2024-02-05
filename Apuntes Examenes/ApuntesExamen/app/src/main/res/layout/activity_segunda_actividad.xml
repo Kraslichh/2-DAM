@@ -1,0 +1,183 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/backgroundColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cita Urgente"
+            android:textSize="34sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginBottom="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/nombreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan"
+            android:textSize="18sp"
+            android:textColor="@color/primaryLightColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/apellidoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pérez"
+            android:textSize="18sp"
+            android:textColor="@color/primaryLightColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/fechaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/02/2024"
+            android:textSize="18sp"
+            android:textColor="@color/primaryLightColor"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cálculo TMB (Tasa Metabólica Basal) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cálculo TMB"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/tmbTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad (en años)"
+            android:inputType="number"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Cálculo TMA (Tasa Metabólica Activa) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cálculo TMA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/tmaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duración del Ejercicio (en minutos)"
+            android:inputType="number"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Cálculo FCM (Frecuencia Cardíaca Máxima) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cálculo FCM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/fcmEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad (en años)"
+            android:inputType="number"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cálculo IMC"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/alturaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura (en metros)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/pesoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Peso (en kilogramos)"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:id="@+id/calculoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado del IMC"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:text="Volver"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnPedirCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:text="Pedir Cita"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
