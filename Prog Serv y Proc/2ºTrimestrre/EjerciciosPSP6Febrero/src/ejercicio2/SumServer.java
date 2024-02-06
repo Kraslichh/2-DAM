@@ -9,33 +9,32 @@ public class SumServer {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Servidor iniciado, escuchando en el puerto " + PORT);
 
-            while (true) { // El servidor corre indefinidamente
+            while (true) {
                 try (Socket clientSocket = serverSocket.accept();
                      PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
                      BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
 
-                    double sum = 0;
-                    int count = 0;
-                    String inputLine;
+                    double result = 0;
+                    double number1 = Double.parseDouble(in.readLine()); // Lee el primer número
+                    double number2 = Double.parseDouble(in.readLine()); // Lee el segundo número
+                    String operation = in.readLine(); // Lee la operación
 
-                    while ((inputLine = in.readLine()) != null && count < 2) { // Lee dos números del cliente
-                        try {
-                            double number = Double.parseDouble(inputLine);
-                            sum += number;
-                            count++;
-                            if (count == 1) {
-                                System.out.println("Primer número recibido. Ahora dime el otro.");
-                                out.println("Primer número recibido. Ahora dime el otro."); // Opcional: enviar confirmación al cliente
-                            }
-                        } catch (NumberFormatException e) {
-                            out.println("Error: Entrada no válida, asegúrese de enviar números.");
+                    switch (operation) {
+                        case "sumar":
+                            result = number1 + number2;
                             break;
-                        }
+                        case "restar":
+                            result = number1 - number2;
+                            break;
+                        case "multiplicar":
+                            result = number1 * number2;
+                            break;
+                        default:
+                            out.println("Operación no válida");
+                            continue; // Salta al siguiente ciclo del while si la operación no es válida
                     }
 
-                    if (count == 2) {
-                        out.println("Suma: " + sum); // Envía la suma de vuelta al cliente
-                    }
+                    out.println("Resultado: " + result); // Envía el resultado de la operación al cliente
                 } catch (IOException e) {
                     System.out.println("Exception caught when trying to listen on port " + PORT + " or listening for a connection");
                     System.out.println(e.getMessage());
@@ -47,3 +46,4 @@ public class SumServer {
         }
     }
 }
+
