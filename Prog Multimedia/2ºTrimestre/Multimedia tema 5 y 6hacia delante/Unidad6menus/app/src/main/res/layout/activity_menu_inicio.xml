@@ -1,0 +1,36 @@
+<!-- activity_menu_inicio.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Ejercicios.MenuInicio">
+
+    <Button
+        android:id="@+id/buttonEjercicio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/buttonEjercicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 2"
+        android:layout_below="@id/buttonEjercicio1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/buttonEjercicio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 3"
+        android:layout_below="@id/buttonEjercicio2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

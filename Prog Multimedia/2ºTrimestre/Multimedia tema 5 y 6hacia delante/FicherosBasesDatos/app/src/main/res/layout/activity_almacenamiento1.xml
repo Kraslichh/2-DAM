@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Almacenamiento1Activity">
+
+    <Button
+        android:id="@+id/btnCrearArchivo"
+        android:layout_width="346dp"
+        android:layout_height="165dp"
+        android:layout_centerInParent="true"
+        android:text="Crear Archivo" />
+
+    <Button
+        android:id="@+id/btnLeerArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_below="@+id/btnCrearArchivo"
+        android:text="Leer Archivo" />
+
+
+    <TextView
+        android:id="@+id/tvDatosArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLeerArchivo"
+        android:layout_marginTop="16dp"
+        android:text="Datos del Archivo:"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

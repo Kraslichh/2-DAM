@@ -1,0 +1,25 @@
+Inflar el diseño XML:
+
+Utiliza LayoutInflater para inflar el diseño XML de la actividad (activity_main2.xml).
+El método from(this).inflate(R.layout.activity_main2, null) convierte el archivo XML en una jerarquía de vistas (View),
+que luego se establece como el contenido de la actividad mediante setContentView(rootView).
+Obtener referencia al botón:
+
+Utiliza findViewById para obtener una referencia al botón con el ID btnOpenSecondActivity
+ que está definido en activity_main2.xml.
+Configurar clic del botón:
+
+Verifica si el botón no es nulo antes de configurar el clic. Luego,
+establece un OnClickListener que se activa cuando el botón es presionado.
+Cuando se presiona el botón, se crea un nuevo Intent que indica la transición desde MainActivity2 hacia SecondActivity2, y
+se inicia la segunda actividad mediante startActivity(intent).
+Diferencia con LayoutInflater directo:
+Inflater directo: Si bien puedes inflar la vista directamente en la actividad sin utilizar LayoutInflater,
+el uso de LayoutInflater proporciona más flexibilidad. Puedes inflar vistas dinámicamente, reutilizar fragmentos
+de diseño en diferentes partes de la aplicación y separar la lógica del diseño. En este caso, LayoutInflater se
+utiliza para inflar el diseño XML antes de configurar el contenido de la actividad.
+
+Uso directo de actividades: Podrías iniciar actividades directamente sin inflar vistas. Sin embargo,
+inflar vistas proporciona una forma más modular y estructurada de diseñar interfaces de usuario,
+especialmente cuando se trabaja con fragmentos y se desea reutilizar componentes visuales. La separación de la lógica y
+ la presentación mejora la mantenibilidad del código.

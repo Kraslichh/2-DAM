@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoDialogFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Ejemplodedatatimepicker">Hola Data time picker</string>
+</resources>

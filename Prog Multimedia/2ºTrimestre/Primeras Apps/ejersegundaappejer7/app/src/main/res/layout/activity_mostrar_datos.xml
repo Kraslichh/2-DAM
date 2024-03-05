@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MostrarDatos">
+
+    <TextView
+        android:id="@+id/tvResultName"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetalles"
+        tools:text="Hola nombre" />
+
+    <TextView
+        android:id="@+id/tvDetalles"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="Detalles"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultApellidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvResultApellidos"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultCurso"
+        app:layout_constraintVertical_bias="0.309"
+        tools:text="Apellidos:" />
+
+    <TextView
+        android:id="@+id/tvResultCurso"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultApellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultAsignatura"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Curso:" />
+
+    <TextView
+        android:id="@+id/tvResultAsignatura"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultCurso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultNotas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Asignatura:" />
+
+    <TextView
+        android:id="@+id/tvResultNotas"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultAsignatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Notas:" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

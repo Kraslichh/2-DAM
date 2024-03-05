@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "278478726333",
+    "project_id": "firbaseprueba-9ad59",
+    "storage_bucket": "firbaseprueba-9ad59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278478726333:android:460f7840e32b0b2dea83d4",
+        "android_client_info": {
+          "package_name": "com.example.firbaseprueba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf_6edyUFfUCMF83DYEXhMXQ36FMa7ENk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

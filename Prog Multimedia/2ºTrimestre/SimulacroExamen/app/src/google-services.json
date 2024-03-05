@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55516959560",
+    "project_id": "simulacroexamen-999d8",
+    "storage_bucket": "simulacroexamen-999d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55516959560:android:0387be4ff6743b2671d97d",
+        "android_client_info": {
+          "package_name": "com.example.simulacroexamen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMQz7pdDgMsJ9VPMaaY6_8fheOdISfiSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

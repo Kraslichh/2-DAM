@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGoToSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a la 2 Pantalla"
+        android:layout_centerInParent="true"
+        android:onClick="goToSecondActivity" />
+
+    <TextView
+        android:id="@+id/tvPantalla1"
+        android:layout_width="394dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:hint="Pantalla 1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

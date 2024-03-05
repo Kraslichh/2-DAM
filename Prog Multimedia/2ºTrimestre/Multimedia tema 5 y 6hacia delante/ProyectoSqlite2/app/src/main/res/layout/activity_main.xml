@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="actividad2.MainActivity">
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginTop="16dp"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etApellidos"
+        android:layout_marginTop="16dp"
+        android:hint="DNI"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDNI"
+        android:layout_marginTop="16dp"
+        android:hint="Edad"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEdad"
+        android:layout_marginTop="16dp"
+        android:hint="Curso"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCurso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Agregar" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAgregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Mostrar Todos" />
+
+    <TextView
+        android:id="@+id/tvAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMostrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+</RelativeLayout>

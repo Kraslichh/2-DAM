@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- EditText para ingresar el nombre -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- EditText para ingresar los apellidos -->
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNombre"
+        android:layout_marginTop="16dp"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Botón para agregar el nombre y apellidos -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etApellidos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Agregar" />
+
+    <!-- Botón para mostrar todos los nombres -->
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAgregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Mostrar Todos" />
+
+</RelativeLayout>
